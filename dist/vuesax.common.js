@@ -10609,6 +10609,7 @@ var vsTrExpand_component = normalizeComponent(
             colspan: this.colspan
           }
         });
+        instance.$slots.default = this.$slots.expand;
         instance.vm = instance.$mount();
         var newTR = document.createElement('tr').appendChild(instance.vm.$el);
         this.insertAfter(tr, newTR);
